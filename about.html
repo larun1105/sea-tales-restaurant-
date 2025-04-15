@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>ABOUT US</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="" alt=""></a>
+            <div class="nav-links" id="navLinks">
+
+                <div class="closebar" onclick="hideMenu()">
+
+                    <i class="bi bi-x close"></i>
+                </div>
+                <ul class="sidebar">
+                    <li><a href="./pakages.php">BOOK A TABLE</a></li>
+                    <li><a href="./restuarant.html">MENU</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./html.html">HOME</a></li>
+                </ul>
+            </div>
+            <div class="hambar" onclick="showMenu()">
+                <i class="bi bi-list ham"></i>
+            </div>
+        </nav>
+
+
+    </section>
+    <script src="./html.js"></script>
+
+    <section class="table-booking">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-text">
+                    <h1>Reserve Your Perfect Table</h1>
+                    <p class="lead">Experience Chennai's finest coastal dining at Sea Tales Restaurant. Our prime tables
+                        book quickly - secure your preferred spot today.</p>
+
+                    <div class="booking-features">
+                        <div class="feature">
+                            <img src="images/icon-window.png" alt="Window view" class="feature-icon">
+                            <h3>Ocean View Tables</h3>
+                            <p>Enjoy panoramic sea views from our exclusive window-side tables</p>
+                        </div>
+
+                        <div class="feature">
+                            <img src="images/icon-romantic.png" alt="Romantic setup" class="feature-icon">
+                            <h3>Romantic Setups</h3>
+                            <p>Special candlelit arrangements for anniversaries and proposals</p>
+                        </div>
+
+                        <div class="feature">
+                            <img src="images/icon-group.png" alt="Group dining" class="feature-icon">
+                            <h3>Group Dining</h3>
+                            <p>Spacious tables available for parties of 6-12 guests</p>
+                        </div>
+                    </div>
+
+                    <div class="booking-cta">
+                        <a href="./html.html" class="btn-primary">View Table Options</a>
+                        <a href="tel:+91904342424" class="btn-secondary">
+                            <i class="bi bi-telephone"></i> Call to Book
+                        </a>
+                    </div>
+                </div>
+
+                <div class="booking-gallery">
+                    <div class="main-image">
+                        <img src="images/booktable-main.jpg" alt="Elegant dining area" class="featured-img">
+                        <div class="image-badge">Most Popular</div>
+                    </div>
+
+                    <div class="thumbnail-grid">
+                        <div class="thumb-container">
+                            <img src="images/table-view1.jpg" alt="Window view table" class="thumb-img active">
+                        </div>
+                        <div class="thumb-container">
+                            <img src="images/table-view2.jpg" alt="Outdoor seating" class="thumb-img">
+                        </div>
+                        <div class="thumb-container">
+                            <img src="images/table-view3.jpg" alt="Private booth" class="thumb-img">
+                        </div>
+                        <div class="thumb-container">
+                            <img src="images/table-view4.jpg" alt="Family dining" class="thumb-img">
+                        </div>
+                    </div>
+
+                    <div class="availability-banner">
+                        <i class="bi bi-calendar-check"></i>
+                        <span>Weekend availability: Limited tables remaining</span>
+                    </div>
+                </div>
+            </div>
+            <section class="testimonials">
+                <center>
+                    <div></div>
+                    <h2> Our Customour Reviews </h2>
+                    <p>"Indulge in an unforgettable dining experience! Book your table today and savor our signature
+                        dishes,
+                        crafted with love and care. Reserve now and let us treat you to a culinary journey that will
+                        leave you
+                        craving for more!"
+                    </p>
+                </center>
+            </section>
+
+            <div class="testimonial-section">
+
+                <div class="testimonials">
+                    <div class="testimonial-card">
+                        <img src="images/reviewer1.jpg" alt="Happy customer" class="reviewer-img">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"The ocean view table made our anniversary unforgettable. Impeccable service and amazing
+                            food!"</p>
+                        <span class="reviewer-name">- Priya K.</span>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <img src="images/reviewer2.jpg" alt="Happy customer" class="reviewer-img">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"Booked the private booth for my birthday - perfect ambiance and attention to detail."</p>
+                        <span class="reviewer-name">- Arjun M.</span>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <style>
+        .table-booking {
+            padding: 4rem 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .booking-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .booking-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .booking-text h1 {
+            font-size: 2.5rem;
+            color: #1a5f7a;
+            margin-bottom: 1rem;
+        }
+
+        .lead {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .booking-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            color: #159895;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .booking-cta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #159895;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #1a5f7a;
+        }
+
+        .btn-secondary {
+            border: 1px solid #159895;
+            color: #159895;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-secondary:hover {
+            background: #f0f8f8;
+        }
+
+        .booking-gallery {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .main-image {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .featured-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #ff6b6b;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+        }
+
+        .thumb-container {
+            cursor: pointer;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .thumb-img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .thumb-img:hover {
+            opacity: 0.8;
+        }
+
+        .thumb-img.active {
+            border: 2px solid #159895;
+        }
+
+        .availability-banner {
+            background: #1a5f7a;
+            color: white;
+            padding: 0.8rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-section {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .testimonial-section h2 {
+            font-size: 2rem;
+            color: #1a5f7a;
+            margin-bottom: 2rem;
+        }
+
+        .testimonials {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            max-width: 300px;
+        }
+
+        .reviewer-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .reviewer-name {
+            font-weight: 500;
+            color: #1a5f7a;
+        }
+
+        @media (max-width: 768px) {
+            .booking-features {
+                grid-template-columns: 1fr;
+            }
+
+            .thumbnail-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .featured-img {
+                height: 250px;
+            }
+        }
+    </style>
+
+    <script>
+        // Thumbnail image switcher
+        const thumbnails = document.querySelectorAll('.thumb-img');
+        const featuredImg = document.querySelector('.featured-img');
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                // Remove active class from all thumbnails
+                thumbnails.forEach(t => t.classList.remove('active'));
+
+                // Add active class to clicked thumbnail
+                this.classList.add('active');
+
+                // Change main image
+                featuredImg.src = this.src.replace('-thumb', '-large');
+                featuredImg.alt = this.alt;
+            });
+        });
+
+        // Simple booking form submission simulation
+        document.querySelector('.btn-primary').addEventListener('click', function (e) {
+            e.preventDefault();
+            // In a real implementation, this would link to booking page
+            console.log('Redirecting to booking page');
+            window.location.href = './packages.php';
+        });
+    </script>
+
+
+    </section>
+    <section class="ABOUT">
+        <center>
+            <h1> Follow Us </h1>
+            <p>
+                Nestled in the heart of Chennai, Sea Tales Restaurant offers a multi-cuisine dining experience that
+                blends exceptional flavors, elegant ambiance, and unforgettable moments. Whether you're planning a
+                romantic dinner, a family gathering, a birthday celebration, or a corporate event, we provide the
+                perfect setting for every occasion.
+            </p>
+        </center>
+        <div class=" bootstrap-icons">
+            <div class="icon-container">
+                <a href="https://wa.me/9043424243" target="_blank"> <i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.facebook.com/people/Sea-Tales-Restaurant/100089425352549/ " target="_blank"> <i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/sea_tales_restaurant?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="seatalesrestaurant@gmail.com" target="_blank"> <i class="bi bi-envelope"></i></a>
+                <a href="https://www.youtube.com/channel/UCD4HE02WWjtUpHycunIROyw" target="_blank"><i
+                        class="bi bi-youtube"></i></a>
+
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <!-- ------popup display---- -->
+
+
+
+    <!-- Floating action button with + icon -->
+    <button class="fab" id="fabBtn">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <!-- Popup overlay and form -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-form">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
